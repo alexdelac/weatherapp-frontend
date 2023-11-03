@@ -11,7 +11,7 @@ document.querySelector('#register').addEventListener('click', function(){
         password: password
     }
 	
-	fetch('http://localhost:3000/users/signup', {
+	fetch('https://whatyearisit-backend-chi-three.vercel.app/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newUser)
@@ -26,7 +26,7 @@ document.querySelector('#register').addEventListener('click', function(){
 
 
 document.querySelector('#connection').addEventListener('click', function(){
-    fetch('http://localhost:3000/users/signin', {
+    fetch('https://whatyearisit-backend-chi-three.vercel.app/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({email: document.querySelector('#connectionEmail').value, password: document.querySelector('#connectionPassword').value})
